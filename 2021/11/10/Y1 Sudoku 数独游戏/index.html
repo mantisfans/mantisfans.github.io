@@ -133,7 +133,21 @@ var _hmt = _hmt || [];
 <li>增加显示正解功能</li>
 <li>导出 windows 可执行文件啦</li>
 </ol>
-
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '101', // 可选。默认为 location.href
+  owner: 'mfans',  //改你自己的名字
+  repo: 'comments-sudoku',  //专门储存评论一个GitHub仓库
+  oauth: {
+    client_id: 'e138e29fffcd011509fa', //改为你自己的，下同
+    client_secret: '7eb99a268d4b8392293e3348808153c232a1b685', 
+  },
+})
+gitment.render('container')
+</script>
 </div>
 
 		</div>
