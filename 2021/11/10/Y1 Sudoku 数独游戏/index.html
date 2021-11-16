@@ -133,22 +133,51 @@ var _hmt = _hmt || [];
 <li>增加显示正解功能</li>
 <li>导出 windows 可执行文件啦</li>
 </ol>
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'comments-sudoku', // 可选。默认为 location.href
-  owner: 'mfans-comment',  //改你自己的名字
-  repo: 'comments-sudoku',  //专门储存评论一个GitHub仓库
-  oauth: {
-    client_id: 'e138e29fffcd011509fa', //改为你自己的，下同
-    client_secret: '7eb99a268d4b8392293e3348808153c232a1b685', 
-  },
-})
-gitment.render('container')
-</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valine - A simple comment system based on Leancloud.</title>
+    <!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="/js/valine.min.js"></script>
+</head>
+<body>
+    <div class="comment"></div>
+    <script>
+        new Valine({
+            // AV 对象来自上面引入av-min.js
+            av: AV, 
+            el: '.comment', // 
+            app_id: 'GNyTMtmqvcqP6apBslauR8xx-gzGzoHsz', // 这里填写上面得到的APP ID
+            app_key: 't1iDj6E5IrjwMfrE68BjwCzC', // 这里填写上面得到的APP KEY
+            placeholder: '评论区' // [v1.0.7 new]留言框占位提示文字
+        });
+    </script>
+</body>
+</html>
 </div>
+
+<div id="comment"></div>
+<span id="comment-count"></span>
+
+<script>
+    comment_el = '#comment';
+    comment_count_el = 'span.comment-count';
+    new Valine({
+        el: comment_el,				// 评论区元素（要求div）
+        count_el: comment_count_el,    // 评论计数元素（要求span）
+        lang: 'zh-cn',							   // 语言（zh-cn或en）
+        emoticon_url: 'https://cloud.panjunwen.com/alu', // 表情包根目录（自行解决文件托管）
+        emoticon_list: ["吐.png", "狂汗.png", "不说话.png"], // 表情包文件列表
+        app_id: 'GNyTMtmqvcqP6apBslauR8xx-gzGzoHsz',			    										   	
+        app_key: 't1iDj6E5IrjwMfrE68BjwCzC',    										      
+        placeholder: 'Write a comment',  // 提示符
+        max_nest: 3,					// 嵌套评论深度，太大会影响加载速度
+        page_size: 5					// 分页大小
+    });
+</script>
+
 
 		</div>
 		
