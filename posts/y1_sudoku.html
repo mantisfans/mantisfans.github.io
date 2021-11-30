@@ -50,13 +50,11 @@
     <title>数独 Sudoku 项目进展 - Mantis Fans!</title>
 
     <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/reset.css">
 
     
 <link rel="stylesheet" href="/css/main.css">
 
-
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,8 +63,9 @@
     <![endif]-->
 
     <!-- Gallery -->
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-
+    
+    <!-- 上面这句cdn导致加载速度很慢。 -->
+    
     <!-- Google Analytics -->
     
 
@@ -77,14 +76,14 @@
 
 	<!-- 百度统计 -->
     <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?3a6aebdb57ce04f7097ac33712733bd2";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?3a6aebdb57ce04f7097ac33712733bd2";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>     
     <!-- 百度统计结束 -->
     <!-- 百度搜索资源平台所有权验证开始 -->
     <meta name="baidu-site-verification" content="code-6q8IugfkV2" />
@@ -166,7 +165,7 @@
             
 
             <!-- Content -->
-            <h3 id="下载sudoku-v092-for-windows"><a class="markdownIt-Anchor" href="#下载sudoku-v092-for-windows"></a> <a href="/downloads/sudoku_v0.9.2.exe">下载：Sudoku V0.9.2 for Windows</a></h3>
+            <h3 id="下载sudoku-v092-for-windows"><a class="markdownIt-Anchor" href="#下载sudoku-v092-for-windows"></a> <a href="/downloads/sudoku_v0.9.2.zip">下载：Sudoku V0.9.2 for Windows</a></h3>
 <h2 id="更新计划"><a class="markdownIt-Anchor" href="#更新计划"></a> 更新计划</h2>
 <ol>
 <li>存储、显示不同难度下最佳成绩</li>
@@ -280,7 +279,7 @@
     </section>
 </section><!-- end main -->
 
-<!-- After footer scripts -->
+<!-- After footer scripts -->   
 
 <!-- jQuery -->
 
@@ -293,7 +292,9 @@
 
 
 <!-- Gallery -->
+<!--
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+-->
 
 <!-- Disqus Comments -->
 
