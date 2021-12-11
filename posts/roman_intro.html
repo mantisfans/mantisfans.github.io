@@ -100,6 +100,10 @@
                 <a href="/archives">总览</a>
             </li>
             
+            <li>
+                <a href="/roman">小说</a>
+            </li>
+            
         </ul>
     </nav><!-- end navigation menu -->
 
@@ -184,17 +188,17 @@
     <h3>留言:</h3>
     <div id="valine"></div>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine@1.1.7/dist/Valine.min.js'></script>
+    <script src='//unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
     <script>
     new Valine({
         el: '#valine' ,
-        notify:false,
-        verify:false,
         app_id: 'GNyTMtmqvcqP6apBslauR8xx-gzGzoHsz',
         app_key: 't1iDj6E5IrjwMfrE68BjwCzC',
         placeholder: '说说您对这篇文章的看法',
         path:window.location.pathname,
-        avatar:'mm' 
+        avatar:'mm',
+        meta: ['nick']
+
     });
     </script>
 

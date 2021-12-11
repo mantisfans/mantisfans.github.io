@@ -630,7 +630,7 @@ h6 {
   font-family: "raleway-regular", arial;
   font-size: 15px;
   line-height: 22px;
-  padding: 60px 30px;
+  padding: 45px 30px;
   background: #fff;
   margin-bottom: 70px;
   -webkit-box-sizing: border-box;
@@ -640,6 +640,10 @@ h6 {
 }
 .content.archives {
   margin-top: 90px;
+}
+.content div.category {
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 .content p {
   color: #4b4848;
@@ -677,7 +681,7 @@ h6 {
   font-family: 'raleway-regular';
   color: #454545;
   font-size: 1.5em;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .content ul.archive-list {
   margin: 20px 0 20px 45px;
