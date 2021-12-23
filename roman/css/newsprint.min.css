@@ -172,6 +172,7 @@ article .categories {
 	font-size:16px
 }
 article .content {
+
 	color:#603e25
 }
 article .content img {
@@ -267,6 +268,9 @@ article {
 }
 article div.two.images p {
 	width:100%
+}
+article .content {
+	font-size: 16px;
 }
 .tagcloud {
 	margin:0 auto;
