@@ -126,9 +126,9 @@ h5, h6          { font-weight: bolder }
         min-height: 100%;
         padding: 0 0 0 50px;
 
-        background: #ffffff;
-        /*background-image: url(../img/new_year2.jpg);*/
-        
+        /*background: #ffffff;*/
+        background-image: url(../img/new_year2.jpg);
+
         float: left;
         overflow: hidden;
         z-index: 9999;
@@ -169,7 +169,8 @@ h5, h6          { font-weight: bolder }
 
     header nav ul li a{
         /**/
-        color: #ffffff;
+        /*color: #ffffff;*/
+
         font-family: "raleway-regular", arial;
         font-size: 14px;
         text-decoration: none;
@@ -256,7 +257,9 @@ h5, h6          { font-weight: bolder }
     }
 
     header .rights p{
-        color: #ffffff;
+        /*color: #ffffff;*/
+
+
         font-family: "raleway-regular", arial;
         font-size: 11px;
         letter-spacing: 1px;
@@ -658,10 +661,12 @@ h5, h6          { font-weight: bolder }
         width: 100%;
         min-height: 100px;
         padding: 0;
-        /*background-color: #ffffff;*/
-        background-image: url(../img/new_year2.jpg);
-        position: -webkit-sticky;
-        position: sticky;
+
+        background-color: #ffffff;
+        /*background-image: url(../img/new_year2.jpg);*/
+
+        /*position: -webkit-sticky;
+        position: sticky;*/
         top: 0;
         z-index: 9999;
     }
@@ -674,8 +679,10 @@ h5, h6          { font-weight: bolder }
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'raleway-regular';
-        /*color: #454545;*/
-        color: #ffffff;
+
+        color: #454545;
+        /*color: #ffffff;*/
+
         font-size: 1.5em;
     }
 
