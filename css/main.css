@@ -125,8 +125,10 @@ h5, h6          { font-weight: bolder }
         width: 250px;
         min-height: 100%;
         padding: 0 0 0 50px;
-        /*background: #ffffff;*/
-        background-image: url(../img/new_year2.jpg);
+
+        background: #ffffff;
+        /*background-image: url(../img/new_year2.jpg);*/
+        
         float: left;
         overflow: hidden;
         z-index: 9999;
@@ -140,8 +142,8 @@ h5, h6          { font-weight: bolder }
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'raleway-regular';
-        /*color: #454545;*/
-        color: #ffffff;
+        color: #454545;
+        /*color: #ffffff;*/
         font-size: 1.5em;
     }
 
