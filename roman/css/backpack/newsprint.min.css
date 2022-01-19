@@ -1,5 +1,16 @@
 
+@font-face {
+	src: url(../fonts/FZFWZhuZiAOldMinchoM.woff) format("woff");
+	font-family:"FZFWZhuZiAOldMinchoM";
+}
+
+@font-face {
+	src: url(../fonts/cangeryunhei03.woff);
+	font-family:"cangeryunhei03";
+}
+
 body {
+	font-family: "FZFWZhuZiAOldMinchoM";
 	margin:12px 0;
 	background-color:#faf3e9;
 	-moz-user-select:none;
@@ -13,7 +24,7 @@ ul {
 }
 a {
 	text-decoration:none;
-	color:gray
+	color: #a12023;
 }
 hr {
 	border:0;
@@ -57,7 +68,7 @@ hr {
 	margin:12px 0
 }
 .index .list .item {
-	margin:12px 0
+	margin:12px 0;
 }
 .index .list .item .icon {
 	position:relative;
@@ -142,7 +153,8 @@ hr {
 }
 article {
 	margin:12px auto;
-	max-width:600px
+	max-width:600px;
+	font-family: "FZFWZhuZiAOldMinchoM";
 }
 article div.two.images p {
 	display:inline-block;
@@ -173,16 +185,20 @@ article .categories {
 	font-size:16px
 }
 article .content {
-
+	letter-spacing: 0.5px;
+	font-family: "cangeryunhei03";
 	color:#603e25
+}
+article .content blockquote p {
+	letter-spacing: 0.5px;
+	font-family: "FZFWZhuZiAOldMinchoM";
 }
 article .content img {
 	max-width:90%;
 }
 article .end {
 	text-align:right;
-	font-family: "FZFWZhuZiAOldMinchoM";
-	color:#603e25
+	color:#603e25FZXKTJW
 }
 article .footnotes {
 	font-size:12px
